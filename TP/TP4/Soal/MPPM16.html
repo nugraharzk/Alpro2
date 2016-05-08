@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0047)http://cspc.cs.upi.edu/team/problem.php?cid=443 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- DOMjudge version 3.2.1 -->
+<title>Rizki Nugraha</title>
+<link rel="shortcut icon" href="http://cspc.cs.upi.edu/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="./MPPM16_files/style.css" type="text/css">
+<script type="text/javascript" src="./MPPM16_files/domjudge.js"></script>
+</head>
+<body>
+<div id="menutop">
+<a target="_top" href="http://cspc.cs.upi.edu/team/datatim.php" accesskey="o" style="color: #FF7738;">Menu Peserta</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/problem.php?cid=443" accesskey="b" style="color: #FF7738;">Soal</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/redirect.php?cid=443" accesskey="b" style="color: #FF7738;">Jawaban</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/scoreboard.php?cid=443" accesskey="b" style="color: #FF7738;">Peringkat</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/logout.php?cid=443" accesskey="l" style="color: #FF7738;">Logout</a>
+</div>
+
+<div id="menutopright">
+<div id="clock">Sat 26 Mar 2016 15:58:10 WIB</div>
+
+</div>
+
+<br><table><tbody><tr bgcolor="#63C0DB"><td><img src="./MPPM16_files/logo.jpg" width="100"><img src="./MPPM16_files/header.jpg" width="650"></td></tr></tbody></table><br><br>
+		<br>
+		<table width="1000">
+		<tbody><tr bgcolor="#C4D8FF">
+			<td colspan="3"><b>Soal:</b></td>
+		</tr>
+		<tr>
+			<td width="300"><ul><li><a href="http://cspc.cs.upi.edu/team/problem.php?is=MPPM16&amp;cid=443"><b>(MPPM16) Mesin Pengurut Presensi Mahasiswa Terbaru 2016</b></a></li></ul></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td style="font-size: 12px;">
+			<h3 style="font-size: 20px;">(MPPM16) Mesin Pengurut Presensi Mahasiswa Terbaru 2016</h3><br>
+			Pembuat Soal: Tim Asisten Pemrograman 6<br><br>
+			<table border="1" align="center">
+			<tbody><tr>
+				<td>Batas Waktu Eksekusi</td>
+				<td>5 Detik</td>
+			</tr>
+			<tr>
+				<td>Batas Memori</td>
+				<td>5 MB</td>
+			</tr>
+			</tbody></table><br>
+			<p>
+Buatlah mesin pengurut daftar mahasiswa dengan data berupa NIM dan mahasiswa dengan ketentuan sebagai berikut :
+</p>
+<h3>Input</h3>
+<ul>
+<li>N (banyaknya data yang akan digunakan)</li>
+<li>ya/tidak <br>
+<b>Menampilkan pesan error atau tidak, jika input bukan keduanya, pesan error tidak ditampilkan.</b></li>
+<li>NIM &amp; NAMA sebanyak N<br>
+<b>NIM harus semuanya berupa angka dan memiliki 7 karakter.<br>
+Jika NIM tidak sesuai, tambahkan ke dalam daftar error.</b>
+</li>
+<li>nim/nama <br>
+<b>Data yang akan diurutkan, nim dengan bubble, nama dengan quick.<br>
+Jika bukan keduanya, hentikan program dengan pesan berupa ---Data tidak dapat diproses---.</b></li>
+</ul>
+
+<h3>Output</h3>
+---Hasil Pengurutan---<br>
+[Data yang sudah diurutkan]<b> (Jika ada)</b> / Tidak ada data valid.<b>(Jika tidak ada data valid)</b><br>
+---Daftar Error--- <b>(Jika ada error &amp; ditampilkan)</b><br>
+[Pesan data yang bermasalah sesuai format] <b>(Jika ada error &amp; ditampilkan)</b><br>
+			<h4>Contoh Masukan</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					<pre>7
+terserah
+124j421 EzBugatti
+2000001 LienKing
+0800322 Artizi
+1520036 Yunifers
+322322322 Ice3
+4429222 Puppan
+7732221 EternalEnpi
+nim
+</pre>
+					</td>
+				</tr>
+			</tbody></table>
+			<br>
+			<h4>Contoh Keluaran</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					<pre>---Hasil Pengurutan---
+0800322 Artizi
+1520036 Yunifers
+2000001 LienKing
+4429222 Puppan
+7732221 EternalEnpi
+</pre>
+					</td>
+				</tr>
+			</tbody></table>
+			</td>
+		</tr><tr><td></td><td></td><td><h4 style="font-size: 12px;">Contoh Masukan 2</h4>
+				<table width="300" border="1" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>3
+ya
+124j421 EzBugatti
+322322322 Ice3
+44292223 Puppan
+nama
+</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				<br>
+				<h4 style="font-size: 12px;">Contoh Keluaran 2</h4>
+				<table width="300" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" cellspacing="0" cellpadding="0" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>---Hasil Pengurutan---
+Tidak ada data valid.
+---Daftar Error---
+124j421 - EzBugatti tidak valid.
+322322322 - Ice3 tidak valid.
+44292223 - Puppan tidak valid.
+</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			</tbody></table><h4 style="font-size: 12px;">Contoh Masukan 3</h4>
+				<table width="300" border="1" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>7
+ya
+124j421 SadLife
+0241281 Cincong
+2332111 Cadas
+12894121 Artizi
+4429222 Puppan
+7732221 EternalEnpi
+9321123 Yunifers
+mmr
+</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				<br>
+				<h4 style="font-size: 12px;">Contoh Keluaran 3</h4>
+				<table width="300" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" cellspacing="0" cellpadding="0" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>---Data tidak dapat diproses---
+</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			
+		<br>
+		<br>
+		<br>
+		<br></body></html>

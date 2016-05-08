@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0047)http://cspc.cs.upi.edu/team/problem.php?cid=447 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- DOMjudge version 3.2.1 -->
+<title>Rizki Nugraha</title>
+<link rel="shortcut icon" href="http://cspc.cs.upi.edu/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="./JADKOS15_files/style.css" type="text/css">
+<script type="text/javascript" src="./JADKOS15_files/domjudge.js"></script>
+</head>
+<body>
+<div id="menutop">
+<a target="_top" href="http://cspc.cs.upi.edu/team/datatim.php" accesskey="o" style="color: #FF7738;">Menu Peserta</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/problem.php?cid=447" accesskey="b" style="color: #FF7738;">Soal</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/redirect.php?cid=447" accesskey="b" style="color: #FF7738;">Jawaban</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/scoreboard.php?cid=447" accesskey="b" style="color: #FF7738;">Peringkat</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/logout.php?cid=447" accesskey="l" style="color: #FF7738;">Logout</a>
+</div>
+
+<div id="menutopright">
+<div id="clock">Thu 21 Apr 2016 09:07:56 WIB<br><span id="timeleft">Sisa Waktu: 5 hari 14:52:03</span></div>
+
+</div>
+
+<br><table><tbody><tr bgcolor="#63C0DB"><td><img src="./JADKOS15_files/logo.jpg" width="100"><img src="./JADKOS15_files/header.jpg" width="650"></td></tr></tbody></table><br><br>
+		<br>
+		<table width="1000">
+		<tbody><tr bgcolor="#C4D8FF">
+			<td colspan="3"><b>Soal:</b></td>
+		</tr>
+		<tr>
+			<td width="300"><ul><li><a href="http://cspc.cs.upi.edu/team/problem.php?is=JADKOS15&amp;cid=447"><b>(JADKOS15) Jadwal Kosong Bersama</b></a></li></ul></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td style="font-size: 12px;">
+			<h3 style="font-size: 20px;">(JADKOS15) Jadwal Kosong Bersama</h3><br>
+			Pembuat Soal: Asisten Pemrograman VI<br><br>
+			<table border="1" align="center">
+			<tbody><tr>
+				<td>Batas Waktu Eksekusi</td>
+				<td>5 Detik</td>
+			</tr>
+			<tr>
+				<td>Batas Memori</td>
+				<td>1 MB</td>
+			</tr>
+			</tbody></table><br>
+			Tobi, Moni dan Piyu berada di kelas yang berbeda. Mereka merupakan anggota dari salah satu Departemen BEM KEMAKOM. Saat ini mereka sedang menentukan waktu rapat rutin. Agar semua anggota dapat menghadiri rapat, yang dipilih adalah waktu dimana semua anggota tidak memiliki jadwal kuliah (irisan jadwal kosong). Buatlah program untuk mencari irisan jadwal kosong mereka, jika waktu beraktivitas ketiganya tidak kurang dari pukul 7 dan tidak lebih dari pukul 18. Gunakan algoritma searching sequential ataupun binary search untuk menyelesaikan permasalahan ini!<br><br>
+
+Format masukan (diulang sebanyak 3 kali, untuk Tobi, Moni, kemudian Piyu) :<br>
+n (jumlah daftar jam yang dipakai untuk kuliah, mulai hari Senin-Jumat)<br>
+daftar jadwal, terdiri dari : [nomor_hari] [jam_mulai] [jam_selesai]<br>
+<br>
+
+Format keluaran :<br>
+[nama_hari] [batas_awal_jam_kosong - batas_akhir]<br>
+			<h4>Contoh Masukan</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					<pre>5
+1 7 18 (maksudnya hari Senin, mulai dari jam 7 hingga jam 18)
+2 7 10 (hari Selasa mulai jam 7 hingga jam 10, kemudian...
+2 16 18 ...dilanjutkan jam 16 hingga jam 18. Berarti di hari selasa, Tobi punya jadwal kosong dari pukul 10 s.d. pukul 16)
+3 7 12  (dst.)
+4 9 12
+
+3
+2 7 18
+3 10 16
+4 7 16
+
+4
+1 8 12
+1 16 17
+3 8 12
+4 7 10</pre>
+					</td>
+				</tr>
+			</tbody></table>
+			<br>
+			<h4>Contoh Keluaran</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					<pre>Rabu 16.00 - 18.00
+Kamis 16.00 - 18.00
+Jumat 7.00 - 18.00</pre>
+					</td>
+				</tr>
+			</tbody></table>
+			</td>
+		</tr><tr><td></td><td></td><td><h4 style="font-size: 12px;">Contoh Masukan 2</h4>
+				<table width="300" border="1" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>5
+1 7 18
+2 7 16
+3 9 16
+4 7 12
+4 16 18
+
+4
+2 10 18
+3 7 10
+4 7 16
+5 10 18
+
+3
+3 16 18
+5 7 10
+5 13 16</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				<br>
+				<h4 style="font-size: 12px;">Contoh Keluaran 2</h4>
+				<table width="300" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" cellspacing="0" cellpadding="0" style="font-family: &#39;Courier New&#39;, Courier;">
+						<pre>Tidak ada irisan jadwal.</pre>
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			</tbody></table>
+		<br>
+		<br>
+		<br>
+		<br></body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)http://cspc.cs.upi.edu/team/problem.php?is=&cid=445 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- DOMjudge version 3.2.1 -->
+<title>Rizki Nugraha</title>
+<link rel="shortcut icon" href="http://cspc.cs.upi.edu/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="./EVBI16_files/style.css" type="text/css">
+<script type="text/javascript" src="./EVBI16_files/domjudge.js"></script>
+</head>
+<body>
+<div id="menutop">
+<a target="_top" href="http://cspc.cs.upi.edu/team/datatim.php" accesskey="o" style="color: #FF7738;">Menu Peserta</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/problem.php?cid=445" accesskey="b" style="color: #FF7738;">Soal</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/redirect.php?cid=445" accesskey="b" style="color: #FF7738;">Jawaban</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/scoreboard.php?cid=445" accesskey="b" style="color: #FF7738;">Peringkat</a>
+<a target="_top" href="http://cspc.cs.upi.edu/team/logout.php?cid=445" accesskey="l" style="color: #FF7738;">Logout</a>
+</div>
+
+<div id="menutopright">
+<div id="clock">Fri  8 Apr 2016 08:57:02 WIB<br><span id="timeleft">Sisa Waktu: 2:32:58</span></div>
+
+</div>
+
+<br><table><tbody><tr bgcolor="#63C0DB"><td><img src="./EVBI16_files/logo.jpg" width="100"><img src="./EVBI16_files/header.jpg" width="650"></td></tr></tbody></table><br><br>
+		<br>
+		<table width="1000">
+		<tbody><tr bgcolor="#C4D8FF">
+			<td colspan="3"><b>Soal:</b></td>
+		</tr>
+		<tr>
+			<td width="300"><ul><li><a href="http://cspc.cs.upi.edu/team/problem.php?is=EVBI16&amp;cid=445"><b>(EVBI16) Evaluasi Binary Search</b></a></li></ul></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td style="font-size: 12px;">
+			<h3 style="font-size: 20px;">(EVBI16) Evaluasi Binary Search</h3><br>
+			Pembuat Soal: Tim Asisten Pemrograman<br><br>
+			<table border="1" align="center">
+			<tbody><tr>
+				<td>Batas Waktu Eksekusi</td>
+				<td>5 Detik</td>
+			</tr>
+			<tr>
+				<td>Batas Memori</td>
+				<td>1 MB</td>
+			</tr>
+			</tbody></table><br>
+			Buatlah program untuk mencari biner dari nilai desimal biner tersebut. <br>
+Diberikan input biner dengan format 8 bit hingga terdapat input dengan kata <b>Selesai</b>.<br>
+Kemudian pisahkan input tersebut dalam 2 buah tabel yang berbeda, tabel dipisahkan berdasarkan nilai desimal &lt; 100 dan nilai desimal &gt; 100.<br>
+URUTKAN dan GABUNGKAN 2 tabel tersebut berdasarkan nilai desimalnya, kemudian TEMUKAN letak <b>Biner yang dicari</b> pada Tabel tersebut.<br>
+Tampilkanlah hasil penggabungan tabel dan index desimal tabel. Jika tidak ditemukan tampilkan <b>data not found</b>. <br><br>
+
+<b>Format Masukan :</b>
+<p>Biner 8 bit, hingga kata <b>Selesai</b><br>
+Angka desimal yang dicari
+</p>
+
+<b>Format Keluaran :</b>
+<p>Tabel Akhir (Terurut)<br>
+index tabel(jika ditemukan) / data not found</p>
+<b>Catatan :</b> <br>
+Gunakan Binary Search,Insertion Sort &amp; Merge Table Terurut <br>
+Urutkan Secara Ascending
+			<h4>Contoh Masukan</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					11111111<br> 
+00000011<br>
+11111000<br>
+01100011<br>
+01100100<br>
+01111000<br>
+Selesai<br>
+3<br><br>
+					</td>
+				</tr>
+			</tbody></table>
+			<br>
+			<h4>Contoh Keluaran</h4>
+			<table width="300" border="1">
+				<tbody><tr>
+					<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+					00000011<br>
+01100011<br>
+01100100<br>
+01111000<br>
+11111000<br>
+11111111<br>
+index 1<br><br>
+					</td>
+				</tr>
+			</tbody></table>
+			</td>
+		</tr><tr><td></td><td></td><td><h4 style="font-size: 12px;">Contoh Masukan 2</h4>
+				<table width="300" border="1" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" style="font-family: &#39;Courier New&#39;, Courier;">
+						01011000<br>
+11011110<br>
+00000001<br>
+10111111<br>
+Selesai<br>
+254<br><br>
+						</td>
+					</tr>
+				</tbody></table>
+				<br>
+				<h4 style="font-size: 12px;">Contoh Keluaran 2</h4>
+				<table width="300" border="1" cellspacing="0" cellpadding="0" style="font-size: 12px;">
+					<tbody><tr>
+						<td valign="top" cellspacing="0" cellpadding="0" style="font-family: &#39;Courier New&#39;, Courier;">
+						data not found<br><br>
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			</tbody></table>
+		<br>
+		<br>
+		<br>
+		<br></body></html>
